@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF with Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .gif {
+            width: 300px; /* Adjust the size as needed */
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- GIF Section -->
+        <img src="rsvp.gif" alt="GIF" class="gif">
+
+        <!-- Clickable Button Section -->
+        <div class="button">
+            <button onclick="goToHomepage()">Back to Homepage</button>
+        </div>
+    </div>
+
+    <script>
+        function goToHomepage() {
+            window.location.href = 'https://samh098.github.io/Save_The_Date/'; // Redirects to the homepage
+            // You can change '/' to any other URL if needed
+        }
+    </script>
+
+</body>
+</html>
